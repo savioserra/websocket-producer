@@ -1,6 +1,6 @@
 const io = require("socket.io-client");
 
-const socket = io.io("http://localhost:3333", {
+const socket = io.io("https://taviao.herokuapp.com", {
   query: {
     id: Math.random(),
   },

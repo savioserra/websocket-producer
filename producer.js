@@ -43,5 +43,5 @@ server.listen({ port: process.env.PORT || 3333 }, () => {
 
       websocket.to(id).emit("data", payload);
     });
-  }, 1e3);
+  }, process.env.INTERVAL || 1e3);
 });
